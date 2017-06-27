@@ -7,3 +7,5 @@ mvn  archetype:generate -DgroupId=org.lizhenhai -DartifactId=filecopy -Darchetyp
 etypes -DarchetypeArtifactId=camel-archetype-java -Dversion=1.0.0-SNAPSHOT
 
 2. 执行main方法, 实现route功能.
+
+3. 比较好的学习资料 http://camel.apache.org/book-getting-started.html
