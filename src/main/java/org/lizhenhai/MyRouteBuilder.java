@@ -17,7 +17,7 @@
 package org.lizhenhai;
 
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.spring.Main;
+import org.apache.camel.main.Main;
 
 /**
  * A Camel Router
@@ -28,7 +28,9 @@ public class MyRouteBuilder extends RouteBuilder {
      * A main() so we can easily run these routing rules in our IDE
      */
     public static void main(String... args) throws Exception {
-        Main.main(args);
+        Main main = new Main();
+        main.configure().addRoutesBuilder(new MyRouteBuilder());
+        main.run(args);
     }
 
     /**
